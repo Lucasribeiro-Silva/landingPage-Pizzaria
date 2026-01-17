@@ -1,6 +1,6 @@
 # 🍕 Landing Page – Pizzaria
 
-Projeto desenvolvido durante o curso de Técnico em Desenvolvimento de Sistemas.
+Projeto desenvolvido durante o curso de **Técnico em Desenvolvimento de Sistemas** (SENAI - Curitiba).
 
 ## 📌 Descrição
 Landing page de uma pizzaria fictícia, com foco na apresentação do negócio, cardápio e informações visuais atrativas.
@@ -21,3 +21,10 @@ Pagina Inicial:
 
 Cardápio:
 ![Cardapio](prints/cardapio.jpg)
+
+
+## 👨‍💻 Autor
+
+**Lucas Ribeiro da Silva**  
+Estudante de DS – SENAI Curitiba  
+[GitHub @Lucasribeiro-Silva](https://github.com/Lucasribeiro-Silva)
