@@ -12,6 +12,9 @@ Landing page de uma pizzaria fictícia, com foco na apresentação do negócio, 
 ## 🎯 Objetivo do projeto
 Praticar estruturação de páginas web, organização de layout e estilização com CSS.
 
+## 🔗 Link do site
+https://lucasribeiro-silva.github.io/landingPage-Pizzaria/
+
 ## 📸 Preview
 Pagina Inicial:
 ![Home](prints/home.jpg)
