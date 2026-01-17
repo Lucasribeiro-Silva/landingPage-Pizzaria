@@ -14,7 +14,7 @@ Praticar estruturação de páginas web, organização de layout e estilização
 
 ## 📸 Preview
 Pagina Inicial:
-![Print](prints/home.png)
+![Home](prints/home.png)
 
 Cardápio:
-![Print](prints/cardapio.png)
+![Cardapio](prints/cardapio.png)
