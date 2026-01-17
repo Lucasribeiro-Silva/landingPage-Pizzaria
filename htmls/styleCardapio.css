@@ -1,0 +1,254 @@
+body {
+    font-family: monospace;
+    line-height: 1.6;
+    background-color: #6b4a38;
+}
+
+header {
+    background-image: url(fundoProdutos.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: #000 solid 3px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.div-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.titulo {
+    font-family: monospace;
+    margin: 0;
+    margin-left: 20%;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.menu nav a {
+    font-family: monospace;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.cardapio {
+    padding: 4rem 0;
+    background-image: url(fundoProdutos.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: #000 solid 1.5px;
+}
+
+.cardapio h2 {
+    font-family: monospace;
+    color: #fff;
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cardapio a {
+    background-color: rgb(172, 133, 101);
+    border: 2px solid #7a522de7;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.cardapio a:hover {
+    background-color: rgb(148, 103, 67);
+    border-radius: 8px;
+    border-color: #7e5229e7; 
+}
+
+.cardapio .opcoes-cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.card-produtos {
+    background: #6b4a38;
+    border: 2px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-produtos:hover {
+    transform: translateY(-8px);
+}
+
+.card-produtos img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card-produtos h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #ffddaa;
+}
+
+.card-produtos p {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+    flex-grow: 1;
+}
+
+.card-produtos strong {
+    font-size: 1.8rem;
+    color: #ffddaa;
+    display: block;
+    margin: 15px 0;
+}
+
+.qtd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+.qtd button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #8b5e3c;
+    color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.add {
+    width: 100%;
+    padding: 12px;
+    background: #ac8565;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add:hover {
+    background: #8b5e3c;
+}
+
+.contato {
+    font-family: monospace;
+    padding: 6rem 0;
+    background-color: #6b4a38;
+    color: #fff;
+}
+
+.contato h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.contato button {
+    background-color: rgb(172, 133, 101);
+    border: 2px solid #7a522de7;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.contato button:hover {
+    background-color: rgb(148, 103, 67);
+    border-radius: 8px;
+    border-color: #7e5229e7; 
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.col-12.col-md-6.col-lg-3 {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+
+    .cardapio h2 {
+        font-size: 2.5rem;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .container-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .opcoes-cardapio {
+        justify-content: center !important;
+        margin-left: 0 !important;
+    }
+
+    .card-produtos {
+        margin: 0 auto;
+    }
+
+    .card-produtos img {
+        max-height: 140px;
+    }
+
+}

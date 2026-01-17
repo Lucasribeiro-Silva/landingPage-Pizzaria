@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Bebidas</title>
+    <link rel="stylesheet" href="styleCardapio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="../imagens/icone-refrigerante.png">
+</head>
+<body>
+    <header class="text-white py-3">
+        <div class="container-header">
+            <div class="div-logo">
+                <img class="logo" src="../imagens/logo-site.png" alt="logo da pizzaria">
+            </div>
+            <h1 class="titulo">Pizzaria</h1>
+            <div class="menu">
+                <nav>
+                    <a href="../index.html">Início</a>
+                    <a href="#contato">Contato</a>
+                    <a href="carrinho.html"><img class="carrinho" src="../imagens/carrinho-de-compras.png" alt="carrinho"></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="cardapio" id="cardapio">
+      <h2>Cardápio - Bebidas</h2>
+      <div class="container">
+          <div class="row g-4">
+            <div class="opcoes-cardapio text-center my-5">
+              <a href="cardapio-pizzas.html" class="btn btn-primary btn-lg mt-3">Pizzas</a>
+              <a href="cardapio-pizzas-doces.html" class="btn btn-primary btn-lg mt-3">Pizzas Doces</a>
+              <a href="cardapio-bebidas.html" class="btn btn-primary btn-lg mt-3">Bebidas</a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-produtos">
+                    <img src="../imagens/fantas.jpg" alt="Fanta 2L">
+                    <div class="info">
+                        <h3>Fanta 2L</h3>
+                        <p>Laranja ou Uva – 2 litros bem geladinha</p>
+                        <strong>R$ 12,00</strong>
+                        <div class="qtd">
+                            <button onclick="diminuir('fanta')">-</button>
+                            <span id="qtd-fanta">0</span>
+                            <button onclick="aumentar('fanta')">+</button>
+                        </div>
+                        <button class="add" onclick="adicionar('fanta', 'Fanta 2L', 12)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-produtos">
+                    <img src="../imagens/pepsi.jpg" alt="Pepsi 2L">
+                    <div class="info">
+                        <h3>Pepsi 2L</h3>
+                        <p>Pepsi Cola original – 2 litros gelada</p>
+                        <strong>R$ 13,00</strong>
+                        <div class="qtd">
+                            <button onclick="diminuir('pepsi')">-</button>
+                            <span id="qtd-pepsi">0</span>
+                            <button onclick="aumentar('pepsi')">+</button>
+                        </div>
+                        <button class="add" onclick="adicionar('pepsi', 'Pepsi 2L', 13)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card-produtos">
+                    <img src="../imagens/garrafa-coca.jpg" alt="Coca-Cola 2L">
+                    <div class="info">
+                        <h3>Coca-Cola 2L</h3>
+                        <p>O refrigerante mais famoso do mundo – 2 litros geladíssima</p>
+                        <strong>R$ 15,00</strong>
+                        <div class="qtd">
+                            <button onclick="diminuir('coca')">-</button>
+                            <span id="qtd-coca">0</span>
+                            <button onclick="aumentar('coca')">+</button>
+                        </div>
+                        <button class="add" onclick="adicionar('coca', 'Coca-Cola 2L', 15)">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="text-center fw-bold">Entre em Contato</h2>
+            <p class="text-center">Preencha o formulário abaixo para tirar qualquer dúvida.</p>
+            <form id="whatsappForm" class="mt-5 col-lg-8 mx-auto">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Seu Nome:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Seu E-mail:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Sua Mensagem:</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="m-0">© 2025 by Pizzaria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
